@@ -8,3 +8,11 @@
 * {
     outline: 1px dotted black;
 }
+
+video {
+  border: 10px dotted red; 
+  /*kludge - temporary solution */
+  width: 100%;
+  height: 100%;
+}
+
