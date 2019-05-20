@@ -5,14 +5,241 @@
   * Outline Elements
 */
 
-* {
-    outline: 1px dotted black;
+/* https://cdn.plyr.io/3.3.12/plyr.css */
+body {
+  background:url('http://www.sclance.com/pngs/fancy-corner-borders-png/fancy_corner_borders_png_476739.png'); 
+  background-color: #24519E;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 
-video {
-  border: 10px dotted red; 
-  /*kludge - temporary solution */
-  width: 100%;
-  height: 100%;
+#pumpkin { 
+  display: block;
+  width: 30%;
+	margin: 0 auto;
+  opacity: 1;
 }
 
+nav:hover #pumpkin {
+  opacity: 0;
+}
+
+#car { 
+  display: block;
+  width: 30%;
+	margin: 0 auto;
+  opacity: 0;
+}
+
+nav:hover #car {
+  opacity: 1;
+}
+
+#Cinderella{
+  text-align: center;
+  margin-top: 300px;
+  font-family: 'Playball', cursive;
+  color: #DCB843; 
+  font-size: 5em;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 10px;
+}
+
+#about {
+  align-items: flex-start;
+  margin: 50px; 
+  width: 60%;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.container { 
+margin: 50px; 
+width: 40%;
+align-items: flex-end;
+}
+
+.plyr--audio .plyr__controls {
+  background-color: black;
+  padding: 0;
+  border-radius: 25px;
+  height: 50px;
+}
+
+.plyr--audio .plyr__control {
+  width: 50px;
+  height: 50px;
+  background-color: #38A9F6;
+  border-radius: 100%;
+  transition: all 0.4s ease;
+}
+.plyr--audio .plyr__control:hover {
+  transform: scale(1.05);
+}
+.plyr--audio .plyr__control svg {
+  margin: auto;
+  fill: #fff;
+}
+
+.plyr--audio .plyr__progress {
+  margin: 0 24px;
+  left: 0;
+}
+
+.plyr--full-ui input[type=range]::-webkit-slider-thumb {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s ease;
+  height: 16px;
+  width: 16px;
+}
+
+.plyr--full-ui input[type=range] {
+  color: #fff;
+}
+.plyr--full-ui input[type=range]:hover {
+  cursor: pointer;
+}
+.plyr--full-ui input[type=range]:hover::-webkit-slider-thumb {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.plyr--full-ui input[type=range]::-webkit-slider-runnable-track {
+  height: 8px;
+}
+
+.plyr--audio .plyr__progress__buffer {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.plyr--audio .plyr__control {
+    width: 50px;
+    height: 50px;
+    background-color: #e25474;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.plyr--audio .plyr__controls {
+    background-color: #ecea88;
+    padding: 0;
+    border-radius: 25px;
+    height: 50px;
+}
+
+.characters{
+  display: grid;
+  grid-template-columns: auto 2% 15% 2% 15% 2% auto;
+  grid-template-rows: 7% auto 7% auto 7% auto 7% auto;
+}
+
+.a {
+  grid-column: 2 /3;
+  grid-row: 1 / 2;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.b {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.c {
+  grid-column: 6 / 7;
+  grid-row: 1 / 2;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.d {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.e {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.f {
+  grid-column: 6 / 7;
+  grid-row: 3 / 4;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.g {
+  grid-column: 6 / 7;
+  grid-row: 5 / 6;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.h {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.i {
+  grid-column: 2 / 3;
+  grid-row: 5/ 6;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.j {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.k {
+  grid-column: 4 / 5;
+  grid-row: 7 / 8;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.l {
+  grid-column: 6 / 7;
+  grid-row: 7 / 8;
+  font-family: 'Amiri', serif;
+  color: white;
+}
+
+.photos{
+  display: grid;
+  grid-template-columns: auto 2% auto 2% auto 2% auto;
+  grid-template-rows: 2% auto -10% auto -10% auto;
+}
+
+#m{
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+#n{
+  grid-column: 2 / 4;
+  grid-row: 1 / 2; 
+}
+
+#o{
+  grid-column: 2 / 4;
+  grid-row: 5 / 6; 
+}
